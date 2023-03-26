@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242D;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--second-bg-color);
+}
+
+.container-fluid {
+    padding: 7% 13%;
+    padding-bottom: 80px;
+}
+
+.phone {
+    transform: rotate(25deg);
+    width: 60%;
+    position: absolute;
+    right: 23%
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--text-color)
+}
+
+span {
+    color: var(--main-color)
+}
+
+.products {
+    background-color: var(--bg-color);
+}
+
+.teams {
+    background-color: var(--second-bg-color);
+}
+.btn1{
+    display:inline-block;
+    padding:1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 0.6rem;
+    color:var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 700;
+    transition: .5s ease;
+}
+.btn1:hover{
+    box-shadow: none;
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.contact{
+    background-color: var(--bg-color);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact h2{
+    margin: 10px;
+}
+.contact .c-form{
+    max-width: 40rem;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+}
+.contact .c-form .input-box{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact .c-form .input-box input ,.contact .c-form textarea{
+    width:100%;
+    padding:0.5rem;
+    font-size:0.6rem;
+    color:var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin:.7rem 0;
+}
+.contact .c-form .input-box input{
+    width:46%;
+}
+.contact .c-form textarea{
+    resize:none;
+}
+.contact .c-form .btn1{
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    cursor:pointer;
+}
+
+@media(min-width:768px) {
+    .degree {
+        margin-top: 125px;
+    }
+
+    .inner-img img {
+        width: 65%;
+        height: auto;
+        border-radius: 25px;
+    }
+    .other-mem img{
+        height:20%;
+    }
+}
+
+@media(max-width:480px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    p {
+
+        padding: 10px;
+    }
+
+    .phone {
+        transform: rotate(0);
+        position: relative;
+        left: 0%;
+        padding-top: 15%;
+        margin: auto;
+    }
+
+    .container-fluid {
+        padding: 7% 13%;
+        padding-bottom: 50px;
+    }
+
+    .inner-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+    .heading{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    .c-heading{
+        text-align: center;
+        font-size: 1.7rem;
+        
+    }
+    .other-mem img{
+        height:10%;
+    }
+    .contact .c-form .input-box input{
+        width:100%;
+    }
+    .contact .c-form textarea{
+        width:85%;
+    }
+}
