@@ -97,7 +97,7 @@ span {
     align-items: center;
 }
 .achievements{
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     height:auto;
 }
 .contact h2{
@@ -137,7 +137,29 @@ span {
     margin-bottom: 0.7rem;
     cursor:pointer;
 }
-
+.social{
+    background-color: var(--second-bg-color);
+    height:auto;
+}
+.social a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:3rem;
+    height:3rem;
+    background: transparent;
+    border:.2rem solid var(--main-color);
+    border-radius:50%;
+    font-size:2rem;
+    color:var(--main-color);
+    /* margin:2rem 1.5rem 3rem 0; */
+    transition:.5s ease;
+}
+.social a:hover{
+    background: var(--main-color);
+    color:var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
 @media(min-width:768px) {
     .degree {
         margin-top: 125px;
