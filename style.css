@@ -25,7 +25,6 @@ html {
 
 body {
     background: var(--bg-color);
-
 }
 
 .about {
@@ -97,6 +96,10 @@ span {
     justify-content: space-around;
     align-items: center;
 }
+.achievements{
+    background-color: var(--bg-color);
+    height:auto;
+}
 .contact h2{
     margin: 10px;
 }
@@ -105,8 +108,8 @@ span {
     margin:auto;
     text-align: center;
     margin-bottom: 3rem;
-    display: flex;
-    flex-wrap: wrap;
+    display:block;
+    flex-wrap:wrap;
     justify-content:space-around ;
 }
 .contact .c-form .input-box{
@@ -117,7 +120,7 @@ span {
 .contact .c-form .input-box input ,.contact .c-form textarea{
     width:100%;
     padding:0.5rem;
-    font-size:0.6rem;
+    font-size:0.7rem;
     color:var(--text-color);
     background: var(--second-bg-color);
     border-radius: .8rem;
@@ -194,6 +197,38 @@ span {
         width:100%;
     }
     .contact .c-form textarea{
-        width:85%;
+        width:100%;
+    }
+}
+@media(min-width:768px){
+    .contact{
+        height:40vh;
+    }
+}
+@media(min-width:300px){
+    .contact{
+        height:105vh;
+    }
+}
+@media(min-width:540px) and (max-width:540px){
+    .phone{
+        display: none;
+    }
+}
+@media (min-width:482px) and (max-width:767px){
+    .phone{
+        display: none;
+    }
+    .contact{
+        height:150vh;
+    }
+}
+
+@media(max-width:306px){
+    .contact{
+        height:180vh;
+    }
+    .phone{
+        width:50%;
     }
 }
