@@ -191,6 +191,7 @@ span {
         left: 0%;
         padding-top: 15%;
         margin: auto;
+        display: block;
     }
 
     .container-fluid {
